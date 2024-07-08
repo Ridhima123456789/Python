@@ -9,7 +9,7 @@ import string
 import webbrowser
 
 # Load the dataset
-with open(r"C:\Users\RIDHIMA KAPOOR\OneDrive\Desktop\Chatbotss\Data set\file.txt", 'r', encoding='utf-8') as file:
+with open(r"file.txt", 'r', encoding='utf-8') as file:
     dataset = file.read()
 
 # Preprocess the dataset
@@ -95,7 +95,7 @@ root.configure(bg="#808080")  # Set background color to grey
 main_frame=tk.Frame(root,bg="#808080")
 main_frame.pack(side=tk.TOP)
 # Circular Logo
-logo_image = Image.open(r"C:\Users\RIDHIMA KAPOOR\OneDrive\Desktop\Chatbotss\LOGO3.png")
+logo_image = Image.open(r"LOGO3.png")
 logo_image = logo_image.resize((100, 100), Image.LANCZOS)
 logo_image = ImageTk.PhotoImage(logo_image)
 logo_label = tk.Label(main_frame, image=logo_image, bg="#808080")
